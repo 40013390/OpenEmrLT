@@ -22,6 +22,7 @@ Verify_Valid_Credentials_Test
     MouseOver On PatientClient
     ClickPatient
     #PATIENT FINDER PAGE
+    #Add
     Switch To Fin Frame
     Add Patient
     Unselect Frame
