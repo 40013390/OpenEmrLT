@@ -23,6 +23,17 @@ TC3
     
 *** Keywords ***
 Verify_Invalid_Credentials_Template
+    
+    ${width}    ${height}    Get Window Size    
+    Log To Console    ${width}    
+    Log To Console    ${height}    
+    
+    Set Window Size    800     600   
+    
+    ${width}    ${height}    Get Window Size    
+    Log To Console    ${width}    
+    Log To Console    ${height}   
+    
     [Arguments]    ${username}    ${password}    ${language}    ${expectedvalue}
     Enter Username    ${username}    
     Enter Password    ${password}     

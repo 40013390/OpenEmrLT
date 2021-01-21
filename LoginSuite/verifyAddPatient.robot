@@ -19,6 +19,8 @@ Verify_Valid_Credentials_Test
     Click Login  
     #DASHBOAR PAGE
     Dashboard Page Should Contain    Flow Board    
+    #Wait Until Page Contains   Flow Board    timeout=100s
+    #Wait Until Element Is Enabled    //button[text()='Save']         
     MouseOver On PatientClient
     ClickPatient
     #PATIENT FINDER PAGE

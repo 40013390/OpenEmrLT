@@ -13,6 +13,9 @@ ${ERROR_LOCATOR}    //*[contains(text(),'Invalid')]
 *** Keywords ***
 Enter Username
     	[Arguments]    ${username}    
+    	[Documentation]    Enter Username \n
+    	...    Example\n
+    	...    | Enter Username | admin |
     	Input Text    ${USERNAME_LOCATOR}    ${username}  
 
 Enter Password
