@@ -28,11 +28,6 @@ Verify_Invalid_Credentials_Template
     Log To Console    ${width}    
     Log To Console    ${height}    
     
-    Set Window Size    800     600   
-    
-    ${width}    ${height}    Get Window Size    
-    Log To Console    ${width}    
-    Log To Console    ${height}   
     
     [Arguments]    ${username}    ${password}    ${language}    ${expectedvalue}
     Enter Username    ${username}    
@@ -40,8 +35,8 @@ Verify_Invalid_Credentials_Template
     Select Language    ${language}     
     Click Login  
     Verify Error Message    Invalid username or password
-    MouseOver On BillySmith
-    Click Logout
+    #MouseOver On BillySmith
+    #Click Logout
        
     
   
