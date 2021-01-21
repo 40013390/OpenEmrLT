@@ -22,6 +22,7 @@ Test Template    Verify_Invalid_Credentials_Template
 TC3    
     
 *** Keywords ***
+
 Verify_Invalid_Credentials_Template
     
     ${width}    ${height}    Get Window Size    
